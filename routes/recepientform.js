@@ -13,7 +13,12 @@ function recepientform(req,res) {
     var Address = req.body.Address
     var Mobilenum = req.body.Mobnum
     var Epts = req.body.Epts
-    var Hla1 = req.body.
+    var Hlaa1 = req.body.rhla_a1
+    var Hlaa2 = req.body.rhla_a2
+    var Hlab1 = req.body.rhla_b1
+    var Hlab2 = req.body.rhla_b2
+    var Hladr1 = req.body.rhla_dr1
+    var Hladr2 = req.body.rhla_dr2
 
     console.log(Area) 
 
@@ -129,7 +134,7 @@ function recepientform(req,res) {
     </html>
     `)
             }
-            var sql = `INSERT INTO recepientform (gender, age, bloodgroup, healthcondition, height, weight, bmi, area, address, mobilenum, epts) VALUES ("${Gender}","${Age}","${Bloodgroup}","${Healthcond}","${Height}","${Weight}","${Bmi}","${Area}","${Address}","${Mobilenum}","${Epts}")`
+            var sql = `INSERT INTO recepientform (gender, age, bloodgroup, healthcondition, height, weight, bmi, area, address, mobilenum, epts, rhla_a1, rhla_a2, rhla_b1, rhla_b2, rhla_dr1, rhla_dr2) VALUES ("${Gender}","${Age}","${Bloodgroup}","${Healthcond}","${Height}","${Weight}","${Bmi}","${Area}","${Address}","${Mobilenum}","${Epts}","${Hlaa1}","${Hlaa2}","${Hlab1}","${Hlab2}","${Hladr1}","${Hladr2}")`
             con.query(sql, function (err, result) {
                 if (err){
                     console.log(err);
