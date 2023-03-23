@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IKAS</title>
+    <link rel="icon" type="image/x-icon" href="/images/nbbicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      @media all and (min-width: 992px) {
+	    .navbar .dropdown-menu-end{ right:0; left: auto;  }
+	    .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	    .navbar .nav-item:hover .nav-link{ color: black;  }
+	    .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	    .navbar .dropdown-menu.fade-up{ top:180%;  }
+	    .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+      }	
+
+      .nav-link {
+        font-family:Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .navbar-brand {
+        font-family: Georgia;
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .dropdown-item {
+        font-family: Georgia;
+        font-size: 18px;
+        font-weight: 300;
+      }
+    </style>
+</head>
+<body style="background-color: rgb(197, 234, 237)">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">I K A S</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i> <b>About Us</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="whoweare"> Who we are?</a></li>
+              <li><a class="dropdown-item text-primary" href="missionvision"> Our Mission & Vision</a></li>
+              <li><a class="dropdown-item text-primary" href="workplan"> Our Work plan & Methodologies </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>Our <b>PIONEERS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="https://www.hrsa.gov/"> HRSA</a></li>
+              <li><a class="dropdown-item text-primary" href="https://www.kidneyregistry.org/"> NKR </a></li>
+              <li><a class="dropdown-item text-primary" href="https://www.kidney.org/"> NKF </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>For <b>DONORS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="willingtodonate"> I am willing to donate</a></li>
+              <li><a class="dropdown-item text-primary" href="eligibledonor">  Am I an eligible Donor? </a></li>
+              <li><a class="dropdown-item text-primary" href="ttkdonor"> Things To Know </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>For <b>RECEPIENTS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="recepientreg">I need a Kidney </a></li>
+              <li><a class="dropdown-item text-primary" href="recepientlog"> Recepient Login  </a></li>
+              <li><a class="dropdown-item text-primary" href="ttkrecepient">Things To Know </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>For <b>CENTERS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="opcfind">Find Your Nearest OPC</a></li>
+              <li><a class="dropdown-item text-primary" href="opc">What is OPC? </a></li>
+              <li><a class="dropdown-item text-primary" href="opclink">Donor->OPC->Recepient</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i><b>Contact us</b></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+    <main class="container mt-4">
+          
+        <section id="home" class="d-flex justify-content-sm-center justify-content-md-evenly align-items-sm-center flex-column-reverse gap-3 flex-md-row">
+          <!-- Home -->
+            <div class="d-flex justify-content-sm-center align-items-sm-center flex-column justify-content-md-start align-items-md-start">
+                <h1 style="font-family: Georgia;"><b>I K A S</b></h1> <h3 style="font-family: Georgia;"><i>A Cure for the Needy</i></h3>
+                <p style="font-family: Georgia;">Save a life after life and a second chance is in your hands.</p>
+
+                <p><strong>1. Introduction: </strong></p>
+<p>The object of this document is to regulate the RULES OF USE and to safeguard the PROTECTION OF THE USERS of (IKAS). The terms “You” and “USER” are used herein to refer to the individuals or entities that access this web site for whatever reason.</p>
+<p>Through IKAS the official web site aims to bring the users by providing users with information on its activities to serve people and also to inform the functioning in the interest of the Society at large. To sensitise people about organ donation and transplantation.</p>
+<p>The use of this site and/or its services presupposes user’s complete and unconditional agreement with and the validity of each and every one of the General Terms and Conditions stipulated in the latest updated version of these Rules of Use. Consequently, user must be aware of the importance of reading these rules each time it visits IKAS. Access to and/or the use of certain services on offer to users (hereinafter user) at IKAS may be subject to certain conditions which, depending on the case, may replace, amend and/or complete these Rules of Use, meaning that user must read and accept these conditions before accessing and/or using the services and contents.</p>
+<p>For greater efficiency and for the benefit of users, any time and without prior warning unilaterally modify the operational, technical or usage conditions of the services. Similarly, with a view to improving the information provided of the optimum quality level, users are invited to suggest any modifications they may consider useful by contacting the persons responsible for the service.</p>
+<p><strong>2. Use of The Website And Intellectual Property Rights:</strong></p>
+<p>a. We have made the Website available to you for your own personal use. We may modify, withdraw or deny access to the Website at any time.</p>
+<p>b. The Website and all the materials contained in it are protected by intellectual property rights, including copyright, and either belong to us or are licensed to us to use. Materials include, but are not limited to, the design, layout, look, appearance, graphics and documents on the Website, as well as other content such as articles, stories and other text (“Materials”).</p>
+<p>c. Some of the blogs articles in the website are written or prepared by other authors. Parashar Foundation has made all efforts to recognize them as the author of the article. If anyone has any objection to the same-please contact us info@organindia.org.</p>
+<p>d. You may not copy, redistribute, republish or otherwise make the Materials on the Website available to anyone else without our consent in writing.</p>
+<p>e. You may print or download materials from the Website for your own personal use or copy the content to other individuals for their personal information provided that:</p>
+<ul>
+<li>i. No materials are modified in any way;</li>
+<li>ii. No graphics are used separately from accompanying text;</li>
+<li>iii. Our copyright and trade mark notices appear in all copies and you acknowledge the Website as the source of the Material; and</li>
+<li>iv. The person to whom you are providing the Materials is made aware of these restrictions.</li>
+<li>v. Some material is taken from the information available in public domain.</li>
+</ul>
+<p>What do we do with this data?</p><br>
+<p>IKAS research staff aggregate national OPTN data and analyze trends in transplantation, and make this data available to researchers, patients and the public at large. By tracking data at national, regional and individual institutional levels, IKAS researchers strive to:
+  
+  develop strategies to drive improvement,
+  continually refine transplantation policies to identify and address inequities in transplant,
+  develop system tools to allow for more efficient donor and recipient matching,
+  identify opportunities to increase the number of transplants,
+  provide powerful research and data analytics to members in order to contribute to collective knowledge of effective organ transplantation.</p>
+<p><strong>3. Limitation of Liability in relation to the Website:</strong></p>
+<p>A. The Website should only be used for information purposes. It is not advice and you should not rely on it to make (or refrain from making) any decisions or take (or refrain from taking) any action.</p>
+<p>B. Parashar Foundation does not guarantee that the Website will operate free of error or that it is free from computer virus or any other contaminating computer programs.</p>
+<p>C. The Website is made available for public viewing on the basis excludes to the fullest extent lawfully permitted all liability whatsoever for any loss or damage howsoever arising out of the use of the Website or reliance upon the content of the Website.</p>
+<p>D. The Website is provided without any warranties or guarantees. You must bear the risks associated with the use of Internet. In particular, we disclaim all liabilities in connection with the following:</p>
+<ul>
+<li>i. incompatibility of the Website with your software, equipment or telecommunication links;</li>
+<li>ii. technical problems including errors or interruptions of the Website; and</li>
+<li>iii. inadequacy of the Website to meet your requirements.</li>
+</ul>
+<p><strong>4. Information on the Website</strong></p>
+<p>A. The information contained on the Website is given for general information and interest purposes only to help the society at large. Whilst we try and ensure the information contained on the Website is accurate and up to date, we cannot be responsible for any inaccuracies in the information. As a result, you should not rely on this information, and we recommend that you take further advice or seek further guidance before taking any action based on the information contained on the Website. Our liability to you as explained above remains unaffected by this.</p>
+<p><strong>5. Our Rights</strong></p>
+<p>We reserve the right to:</p>
+<p>a) modify or withdraw, temporarily or permanently, the Website (or any part thereof) with or without notice to you and you confirm that we shall not be liable to you or any third party for any modification to or withdrawal of the Website; and/or</p>
+<p>b) change the Terms from time to time, and your continued use of the Website (or any part thereof) following such change shall be deemed to be your acceptance of such change. It is your responsibility to check regularly to determine whether the Terms have been changed. If you do not agree to any change to the Terms then you must immediately stop using the Website.</p>
+<p><strong>6. Linking: </strong></p>
+<p>A. The Website contains links to websites owned and operated by third parties. If you use these links, you leave the Website. Where we provide the link we have limited control over the contents of the linked website and we are not responsible for any linked website or their content or availability. If you wish to open such links from such third party website, IKAS is not a party to any such contract for the purchase between you and any seller.</p>
+<p>B. We accept no liability for any damage or loss, however caused, in connection with the use of or reliance on any information, material, products or services contained on or accessed through any such linked website.</p>
+<p>C. You may not link to the Website from another website without our consent in writing.</p>
+<p><strong>7. Other Important Terms:</strong></p>
+<p>A. We may transfer our rights and obligations under a contract to another organisation, but this will not affect your rights or our obligations under these Terms. We will always notify you by posting on this webpage if this happens.</p>
+<p>B. You may only transfer your rights or your obligations under these Terms to another person if we agree in writing.</p>
+<p>C. Each of the paragraphs of these Terms operates separately. If any court or relevant authority decides that any of them are unlawful or unenforceable, the remaining paragraphs will remain in full force and effect.</p>
+<p>D. If we fail to insist that you perform any of your obligations under these Terms, or if we do not enforce our rights against you, or if we delay in doing so, that will not mean that we have waived our rights against you and will not mean that you do not have to comply with those obligations. If we do waive a default by you, we will only do so in writing, and that will not mean that we will automatically waive any later default by you.</p>
+<p><strong>8. Applicable Law And Competent Jurisdiction:</strong></p>
+<p>These General Terms and/or Conditions are governed by Indian Law. For the settlement of any disputes that may arise in connection with their total or partial validity, execution, compliance or resolution, user, expressly waiving their own or any other venue that may correspond to them, agree to abide by the jurisdiction of the Courts and Tribunals of the city of Delhi. This contract constitutes the total and complete agreement between IKAS and user and substitutes all previous pacts, undertakings, statements and agreements, whether written or oral, that may have existed previously between both parties. Provisions of Arbitration and Conciliation Act 1996 as amended shall apply to any dispute arising out of and between the user of the website that is IKAS.</p>
+
+            </div>
+
+
+
+
+
+
+
+
+        </section>  
+
+
+        <section id="contact" class="mt-4 py-4">
+          <!-- Contact us -->
+          <hr>
+          <br>
+          <h1 class="text-primary text-center" style="font-family: Georgia;">Contact Us</h1>
+          <div class="row">
+              <div class="col-sm col-md-8">
+          <form action="">
+              <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"><b>Email address</b></label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" required placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"><b>Message</b></label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" required placeholder="Enter your amazing message!" rows="3"></textarea>
+                </div>
+              <button type="submit" class="btn btn-primary" style="font-family: Verdana; font-weight: 600;">
+                  Submit
+              </button>  
+          </form>
+              </div>
+              <div class="col-sm col-md-4">
+          <div class="mt-3">
+              <h4><i class="fas fa-at text- ms-2"></i><a href="mailto:ikasindia@gmail.com">  ikasindia@gmail.com</a></h4>
+              <h4 class="text-dark"><b>  Call us at :</b> <a href="tel:+919361780464" class="text-primary">9361780464</a></h4>
+          </div>
+          </div>
+          </div>
+
+        </section>
+
+
+</body>
+</html>

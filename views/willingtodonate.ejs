@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IKAS</title>
+    <link rel="icon" type="image/x-icon" href="/images/nbbicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       body{
+        background-image: url("https://t3.ftcdn.net/jpg/00/89/42/20/240_F_89422019_YuSiJqx6ubulH096BPXng4AvcgzDthaH.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed ;
+        background-size: cover;
+        background-position: center;
+      }
+      @media all and (min-width: 992px) {
+	    .navbar .dropdown-menu-end{ right:0; left: auto;  }
+	    .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	    .navbar .nav-item:hover .nav-link{ color: black;  }
+	    .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	    .navbar .dropdown-menu.fade-up{ top:180%;  }
+	    .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+      }	
+
+      .nav-link {
+        font-family:Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .navbar-brand {
+        font-family: Georgia;
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .dropdown-item {
+        font-family: Georgia;
+        font-size: 18px;
+        font-weight: 300;
+      }
+    </style>
+</head>
+<body style="background-color: rgb(197, 234, 237)">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">I K A S</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i> <b>About Us</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="whoweare"> Who we are?</a></li>
+              <li><a class="dropdown-item text-primary" href="missionvision"> Our Mission & Vision</a></li>
+              <li><a class="dropdown-item text-primary" href="workplan"> Our Work plan & Methodologies </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>Our <b>PIONEERS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="https://www.hrsa.gov/"> HRSA</a></li>
+              <li><a class="dropdown-item text-primary" href="https://www.kidneyregistry.org/"> NKR </a></li>
+              <li><a class="dropdown-item text-primary" href="https://www.kidney.org/"> NKF </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>For <b>DONORS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="willingtodonate"> I am willing to donate</a></li>
+              <li><a class="dropdown-item text-primary" href="eligibledonor">  Am I an eligible Donor? </a></li>
+              <li><a class="dropdown-item text-primary" href="ttkdonor"> Things To Know </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>For <b>RECEPIENTS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="recepientreg">I need a Kidney </a></li>
+              <li><a class="dropdown-item text-primary" href="recepientlog"> Recepient Login  </a></li>
+              <li><a class="dropdown-item text-primary" href="ttkrecepient">Things To Know </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>For <b>CENTERS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="opcfind">Find Your Nearest OPC</a></li>
+              <li><a class="dropdown-item text-primary" href="opc">What is OPC? </a></li>
+              <li><a class="dropdown-item text-primary" href="opclink">Donor->OPC->Recepient</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i><b>Contact us</b></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+    <main class="container mt-4">
+          
+        <section id="home" class="d-flex justify-content-sm-center justify-content-md-evenly align-items-sm-center flex-column-reverse gap-3 flex-md-row">
+          <!-- Home -->
+            <div class="d-flex justify-content-sm-center align-items-sm-center flex-column justify-content-md-start align-items-md-start">
+                <h1 style="font-family: Georgia;"><b>I K A S</b></h1> <h3 style="font-family: Georgia;"><i>A Cure for the Needy</i></h3>
+                <p style="font-family: Georgia;">Save a life after life and a second chance is in your hands.</p>
+                <h3><b>What should I expect from surgery and kidney donation recovery?</b></h3><br>
+                <p>Kidney donation surgery is done under general anesthesia and typically takes about 2 to 3 hours. During the surgery, your medical team will monitor your heart rate, blood pressure, and blood oxygen level. Surgeons usually do laparoscopic surgery, which is less invasive. This type of surgery uses smaller incisions, causes less scarring, and can mean a shorter kidney donation recovery time. Afterward, it’s common to stay in the hospital for a few days.
+
+<br><br>
+                  Once you’re at home, kidney donation recovery involves taking it easy for 3 to 6 weeks, as directed by your doctor. You can start driving again after about 2 weeks. You will need follow-up appointments and then periodic monitoring to make sure you are recovering well and staying healthy.</p><br><br>
+                <h3><b>Organ Donation Registration in India</b></h3>
+	<p>Organ donation is a noble act that can save and improve lives. If you're interested in registering as an organ donor in India, here are some options:</p>
+	
+	<h5>1. National Organ and Tissue Transplant Organization (NOTTO)</h5>
+	<p>NOTTO is a national-level organization responsible for coordinating organ and tissue transplantation in India. You can register as an organ donor on their website at <a href="https://www.notto.gov.in/organ-donation.htm">https://www.notto.gov.in/organ-donation.htm</a>.</p>
+	
+	<h5>2. State-Level Websites</h5>
+	<p>Many states in India have their own websites where you can register as an organ donor. Some examples include:</p>
+	<ul>
+		<li>Delhi: <a href="https://www.doda.delhi.gov.in/content/page/donor-registration.php">https://www.doda.delhi.gov.in/content/page/donor-registration.php</a></li>
+		<li>Maharashtra: <a href="https://aaplesarkar.mahaonline.gov.in/en/Login/Login">https://aaplesarkar.mahaonline.gov.in/en/Login/Login</a></li>
+		<li>Tamil Nadu: <a href="https://www.tnos.org/">https://www.tnos.org/</a></li>
+	</ul>
+	
+	<h5>3. Private Organizations</h5>
+	<p>There are also several private organizations in India that facilitate organ donation. Some examples include:</p>
+	<ul>
+		<li>Mohan Foundation: <a href="https://www.mohanfoundation.org/organ-donation-India.asp">https://www.mohanfoundation.org/organ-donation-India.asp</a></li>
+		<li>ORGAN India: <a href="https://www.organindia.org/">https://www.organindia.org/</a></li>
+		<li>Gift Your Organ Foundation: <a href="https://giftyourorgan.org/donor-registration/">https://giftyourorgan.org/donor-registration/</a></li>
+	</ul>
+	
+	<p>By registering as an organ donor, you can help save lives and make a meaningful difference in the world. Thank you for considering this important decision.</p>
+
+            </div>
+
+
+
+
+
+
+
+
+        </section>  
+
+
+        <section id="contact" class="mt-4 py-4">
+          <!-- Contact us -->
+          <hr>
+          <br>
+          <h1 class="text-primary text-center" style="font-family: Georgia;">Contact Us</h1>
+          <div class="row">
+              <div class="col-sm col-md-8">
+          <form action="">
+              <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"><b>Email address</b></label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" required placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"><b>Message</b></label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" required placeholder="Enter your amazing message!" rows="3"></textarea>
+                </div>
+              <button type="submit" class="btn btn-primary" style="font-family: Verdana; font-weight: 600;">
+                  Submit
+              </button>  
+          </form>
+              </div>
+              <div class="col-sm col-md-4">
+          <div class="mt-3">
+              <h4><i class="fas fa-at text- ms-2"></i><a href="mailto:ikasindia@gmail.com">  ikasindia@gmail.com</a></h4>
+              <h4 class="text-dark"><b>  Call us at :</b> <a href="tel:+919361780464" class="text-primary">9361780464</a></h4>
+          </div>
+          </div>
+          </div>
+
+        </section>
+
+
+</body>
+</html>

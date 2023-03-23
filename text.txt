@@ -1,0 +1,26 @@
+donor_id = document.getElementByID('search-by-id');
+temp = select * from donorform where id= donor_id
+
+if bmi<35
+if temp.bloodgrup  = 'O':
+    temp2 = select id,hla1,hla2 from recepientform where bloodgrp in A, AB
+    for(i=0;temp2.length;i++){
+        int count=0;
+        if (temp2[i].hla1 == temp.hla1)
+            count++
+        if (temp2[i].hla1 == temp.hla1)
+            count++
+        if (temp2[i].hla1 == temp.hla1)
+            count++
+        if (temp2[i].hla1 == temp.hla1)
+            count++
+        if count > ==3:
+            matchdonorID.append(temp2[i].id);
+    }
+
+    temp2 = `select * from recepientform where id in `+ matchdonorID 
+
+if B
+if AB
+
+

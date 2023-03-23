@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IKAS</title>
+    <link rel="icon" type="image/x-icon" href="/images/nbbicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body{
+        background-image: url("https://media.istockphoto.com/id/1360231666/photo/nephrologist-doctor-kidney-specialist-aesthetic-handdrawn-highlighted-illustration-of-human.jpg?s=612x612&w=0&k=20&c=T0sygGvAU_ymOsHdUjVkOpJwfMmTjAICNPIKG_Epn4k=");
+        background-repeat: no-repeat;
+        background-attachment: fixed ;
+        background-size: cover;
+        background-position: center;
+      }
+      @media all and (min-width: 992px) {
+	    .navbar .dropdown-menu-end{ right:0; left: auto;  }
+	    .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	    .navbar .nav-item:hover .nav-link{ color: black;  }
+	    .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	    .navbar .dropdown-menu.fade-up{ top:180%;  }
+	    .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+      }	
+
+      .nav-link {
+        font-family:Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .navbar-brand {
+        font-family: Georgia;
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .dropdown-item {
+        font-family: Georgia;
+        font-size: 18px;
+        font-weight: 300;
+      }
+    </style>
+</head>
+<body style="background-color: rgb(197, 234, 237)">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">I K A S</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i> <b>About Us</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="whoweare"> Who we are?</a></li>
+              <li><a class="dropdown-item text-primary" href="missionvision"> Our Mission & Vision</a></li>
+              <li><a class="dropdown-item text-primary" href="workplan"> Our Work plan & Methodologies </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>Our <b>PIONEERS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="https://www.hrsa.gov/"> HRSA</a></li>
+              <li><a class="dropdown-item text-primary" href="https://www.kidneyregistry.org/"> NKR </a></li>
+              <li><a class="dropdown-item text-primary" href="https://www.kidney.org/"> NKF </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>For <b>DONORS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="willingtodonate"> I am willing to donate</a></li>
+              <li><a class="dropdown-item text-primary" href="eligibledonor">  Am I an eligible Donor? </a></li>
+              <li><a class="dropdown-item text-primary" href="ttkdonor"> Things To Know </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>For <b>RECEPIENTS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="recepientreg">I need a Kidney </a></li>
+              <li><a class="dropdown-item text-primary" href="recepientlog"> Recepient Login  </a></li>
+              <li><a class="dropdown-item text-primary" href="ttkrecepient">Things To Know </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>For <b>CENTERS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="opcfind">Find Your Nearest OPC</a></li>
+              <li><a class="dropdown-item text-primary" href="opc">What is OPC? </a></li>
+              <li><a class="dropdown-item text-primary" href="opclink">Donor->OPC->Recepient</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i><b>Contact us</b></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+    <main class="container mt-4">
+          
+        <section id="home" class="d-flex justify-content-sm-center justify-content-md-evenly align-items-sm-center flex-column-reverse gap-3 flex-md-row">
+          <!-- Home -->
+            <div class="d-flex justify-content-sm-center align-items-sm-center flex-column justify-content-md-start align-items-md-start">
+                <h1 style="font-family: Georgia;"><b>I K A S</b></h1> <h3 style="font-family: Georgia;"><i>A Cure for the Needy</i></h3>
+                <p style="font-family: Georgia;">Save a life after life and a second chance is in your hands.</p>
+                <h3><b>What Blood Types Match?</b></h3><br>
+                <p>In living donation, the following blood types are compatible:</p>
+                <ul>
+                <li>Donors with blood type A... can donate to recipients with blood types A and AB</li>
+                <li>Donors with blood type B... can donate to recipients with blood types B and AB</li>
+                <li>Donors with blood type AB... can donate to recipients with blood type AB only</li>
+                <li>Donors with blood type O... can donate to recipients with blood types A, B, AB and O&nbsp;<em>(O is the universal donor: donors with O blood are compatible with any other blood type)</em></li>
+                </ul>
+                <p>So,</p>
+                <ul>
+                <li>Recipients with blood type O... can receive a kidney from blood type O only</li>
+                <li>Recipients with blood type A... can receive a kidney from blood types A and O</li>
+                <li>Recipients with blood type B... can receive a kidney from blood types B and O</li>
+                <li>Recipients with blood type AB... can receive a kidney from blood types A, B, AB and O&nbsp;<em>(AB is the universal recipient: recipients with AB blood are compatible with any other blood type)</em></li>
+                </ul><br>
+                <p>However, there are some programs are available to help donor/recipient pairs with blood types that are otherwise incompatible: paired exchange and plasmapheresis.</p><br><br>
+                <h3><b>What do I need to think about before donating an organ?</b></h3>
+                <p>When you donate an organ to someone else, you are providing a life-sustaining gift. But there are many things you should consider carefully before you make the decision to become a living donor.</p>
+                <p>You will need to consider your overall health, and whether you have any medical problems, such as high blood pressure or diabetes. You will also need to consider any effects donation might have on you, your spouse, your children, or other family members. Your finances are also important, such as time lost from work and travel expenses. In short, giving an organ to someone else means being ready to face some emotional, physical, and financial challenges. You should think about all of these things carefully and make sure you are willing and ready to donate.</p>
+                <p>You may find it helpful to ask yourself some important questions as you go through your decision-making process.</p>
+                <h3>Will I have help with making the decision?</h3>
+                <p>Your transplant center has a social worker who can help you decide if becoming a living donor is right for you. The social worker is there to assist you personally and answer all your questions. Your discussions will be kept private and confidential.</p>
+                <p>Talking it over with people you trust can also help. You will want to discuss it with your family members. Your friends can also provide insights and support. You may also find it helpful to speak with a psychologist, social worker, spiritual advisor, your employer, or your co-workers.</p>
+                <h3>What if I decide against being a living donor?</h3>
+                <p>Your decision to donate an organ must be completely voluntary and free from pressure. You have the right to decide that donating a kidney is not for you. You can delay or end the donation process at any time. The reasons for your decision will be kept private and confidential by the transplant team.</p>
+                <p>If necessary, you can ask the transplant team for support in declining donation. For example, if you fear that saying "no" to the recipient would cause your family to be upset or angry with you, you may want to ask the transplant team for support. They can help you develop an appropriate response — or even a medical disclaimer if needed — which would allow you to decline gracefully.</p>
+                <p>A person with kidney failure also has some important rights. They may decide they do not want a transplant. Or they may not choose to consider a living donor. Both your decision and the recipient's decision about transplantation must be respected.</p>
+                <h3>What are the long-term risks of donation?</h3>
+                <p>You will also have a scar from the donor operation- the size and location of the scar will depend on the type of operation you have.</p>
+                <p>Some donors have reported long-term problems with pain, nerve damage, hernia or intestinal obstruction. There are not currently any national statistics on the frequency of these problems.</p>
+                <p>In addition, people with one kidney may be at a greater risk of:</p>
+                <ul>
+                <li>High blood pressure</li>
+                <li>Proteinuria</li>
+                <li>Reduced kidney function</li>
+                </ul>
+            </div>
+
+
+
+
+
+
+
+
+        </section>  
+
+
+        <section id="contact" class="mt-4 py-4">
+          <!-- Contact us -->
+          <hr>
+          <br>
+          <h1 class="text-primary text-center" style="font-family: Georgia;">Contact Us</h1>
+          <div class="row">
+              <div class="col-sm col-md-8">
+          <form action="">
+              <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"><b>Email address</b></label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" required placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"><b>Message</b></label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" required placeholder="Enter your amazing message!" rows="3"></textarea>
+                </div>
+              <button type="submit" class="btn btn-primary" style="font-family: Verdana; font-weight: 600;">
+                  Submit
+              </button>  
+          </form>
+              </div>
+              <div class="col-sm col-md-4">
+          <div class="mt-3">
+              <h4><i class="fas fa-at text- ms-2"></i><a href="mailto:ikasindia@gmail.com">  ikasindia@gmail.com</a></h4>
+              <h4 class="text-dark"><b>  Call us at :</b> <a href="tel:+919361780464" class="text-primary">9361780464</a></h4>
+          </div>
+          </div>
+          </div>
+
+        </section>
+
+
+</body>
+</html>

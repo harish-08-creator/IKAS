@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IKAS</title>
+    <link rel="icon" type="image/x-icon" href="/images/nbbicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body{
+        background-image: url("https://t3.ftcdn.net/jpg/02/48/11/14/240_F_248111437_gYaK61MyjcsfbXi0zSc7cZODDHc4xXgU.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed ;
+        background-size: cover;
+        background-position: center;
+      }
+      @media all and (min-width: 992px) {
+	    .navbar .dropdown-menu-end{ right:0; left: auto;  }
+	    .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	    .navbar .nav-item:hover .nav-link{ color: black;  }
+	    .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	    .navbar .dropdown-menu.fade-up{ top:180%;  }
+	    .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+      }	
+
+      .nav-link {
+        font-family:Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .navbar-brand {
+        font-family: Georgia;
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .dropdown-item {
+        font-family: Georgia;
+        font-size: 18px;
+        font-weight: 300;
+      }
+    </style>
+</head>
+<body style="background-color: rgb(197, 234, 237)">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">I K A S</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i> <b>About Us</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="whoweare"> Who we are?</a></li>
+              <li><a class="dropdown-item text-primary" href="missionvision"> Our Mission & Vision</a></li>
+              <li><a class="dropdown-item text-primary" href="workplan"> Our Work plan & Methodologies </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>Our <b>PIONEERS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="https://www.hrsa.gov/"> HRSA</a></li>
+              <li><a class="dropdown-item text-primary" href="https://www.kidneyregistry.org/"> NKR </a></li>
+              <li><a class="dropdown-item text-primary" href="https://www.kidney.org/"> NKF </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>For <b>DONORS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="willingtodonate"> I am willing to donate</a></li>
+              <li><a class="dropdown-item text-primary" href="eligibledonor">  Am I an eligible Donor? </a></li>
+              <li><a class="dropdown-item text-primary" href="ttkdonor"> Things To Know </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>For <b>RECEPIENTS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="recepientreg">I need a Kidney </a></li>
+              <li><a class="dropdown-item text-primary" href="recepientlog"> Recepient Login  </a></li>
+              <li><a class="dropdown-item text-primary" href="ttkrecepient">Things To Know </a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>For <b>CENTERS</b></i>  </a>
+              <ul class="dropdown-menu fade-up">
+              <li><a class="dropdown-item text-primary" href="opcfind">Find Your Nearest OPC</a></li>
+              <li><a class="dropdown-item text-primary" href="opc">What is OPC? </a></li>
+              <li><a class="dropdown-item text-primary" href="opclink">Donor->OPC->Recepient</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i><b>Contact us</b></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+    <main class="container mt-4">
+          
+        <section id="home" class="d-flex justify-content-sm-center justify-content-md-evenly align-items-sm-center flex-column-reverse gap-3 flex-md-row">
+          <!-- Home -->
+            <div class="d-flex justify-content-sm-center align-items-sm-center flex-column justify-content-md-start align-items-md-start">
+                <h1 style="font-family: Georgia;"><b>I K A S</b></h1> <h3 style="font-family: Georgia;"><i>A Cure for the Needy</i></h3>
+                <p style="font-family: Georgia;">Save a life after life and a second chance is in your hands.</p>
+
+                <h3>Eligibility for Kidney Donation</h3>
+	<p><img src="images\Fact_1.png" alt="Kidney transplant" width="300" height="200" style="float:right">Donating a kidney is an extremely generous act that can help give the kidney transplant recipient the gift of a longer, healthier life. While kidney transplants generally last an average of 12-15 years, a transplant from a living kidney donor lasts an average of 15-20 years—potentially much longer than a transplant from a deceased kidney donor. If you’re interested in donating a kidney to a loved one, friend, or even a stranger, there are certain kidney donation requirements to meet and other factors to think about.</p>
+	<b><h3>Do you meet the kidney donor requirements?</b></h3>
+  Before moving ahead with becoming a kidney donor, you must meet certain basic kidney donation requirements. In general, a kidney donor must:<br>
+<ol>
+<li>Be 18 years of age or older</li>
+<li>Be in good physical and mental health</li>
+<li>Have normal kidney function</li>
+<br><br>
+If you want to become a kidney donor, you will undergo medical and psychological tests to make sure you’re healthy enough to donate a kidney. You will also go through a series of medical tests at the transplant center to see if you’re a match for the transplant recipient and if you’re ready for surgery. Before kidney donation you'll have:<br>
+<ol>
+<li>Blood tests</li>
+<li>Tissue typing tests</li>
+<li>Antibody tests</li>
+<li>Pre–surgery health screening</li></ol>
+<br><br>
+
+Both the donor’s and the potential recipient’s health are considered when screening kidney donors. There are certain medical conditions that can keep you from becoming a kidney donor, such as
+	
+	<ul>
+		<li>Cancer</li>
+		<li>Heart disease</li>
+		<li>Diabetes</li>
+		<li>High blood pressure</li>
+		<li>Kidney disease</li>
+		<li>HIV or hepatitis</li>
+		<li>Drug or alcohol addiction</li>
+	</ul>
+	<br><br>
+	<h5>Compatibility</h5>
+	<p>The donor's blood and tissue type must be compatible with the recipient's. This is determined through a series of tests and evaluations conducted by healthcare professionals.</p><br><br>
+	
+	<h5>Willingness</h5><br>
+	<p>Donors must be willing to undergo the evaluation process and the surgery itself. They should have a clear understanding of the risks and benefits of kidney donation, and make the decision to donate voluntarily and without coercion.</p><br><br>
+	
+	<p>If you are interested in becoming a kidney donor, the first step is to contact a transplant center or hospital in your area to learn more about the process and eligibility requirements. While not everyone may be eligible to donate, your willingness to consider this life-saving gift is deeply appreciated.</p>
+
+            </div>
+
+
+
+
+
+
+
+
+        </section>  
+
+
+        <section id="contact" class="mt-4 py-4">
+          <!-- Contact us -->
+          <hr>
+          <br>
+          <h1 class="text-primary text-center" style="font-family: Georgia;">Contact Us</h1>
+          <div class="row">
+              <div class="col-sm col-md-8">
+          <form action="">
+              <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"><b>Email address</b></label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" required placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"><b>Message</b></label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" required placeholder="Enter your amazing message!" rows="3"></textarea>
+                </div>
+              <button type="submit" class="btn btn-primary" style="font-family: Verdana; font-weight: 600;">
+                  Submit
+              </button>  
+          </form>
+              </div>
+              <div class="col-sm col-md-4">
+          <div class="mt-3">
+              <h4><i class="fas fa-at text- ms-2"></i><a href="mailto:ikasindia@gmail.com">  ikasindia@gmail.com</a></h4>
+              <h4 class="text-dark"><b>  Call us at :</b> <a href="tel:+919361780464" class="text-primary">9361780464</a></h4>
+          </div>
+          </div>
+          </div>
+
+        </section>
+
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IKAS</title>
+    <link rel="icon" type="image/x-icon" href="/images/nbbicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+        background-image: url("https://img.freepik.com/free-vector/clean-medical-background_53876-97927.jpg?w=900&t=st=1679209264~exp=1679209864~hmac=d8e26fabf6a1a131f6d43b98b416eee839d855bb2a248acabf9a747c2a85a3d3");
+        background-repeat: no-repeat;
+        background-attachment: fixed ;
+        background-size: cover;
+        background-position: center;
+      }
+      @media all and (min-width: 992px) {
+	    .navbar .dropdown-menu-end{ right:0; left: auto;  }
+	    .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	    .navbar .nav-item:hover .nav-link{ color: black;  }
+	    .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	    .navbar .dropdown-menu.fade-up{ top:180%;  }
+	    .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+      }	
+
+      .nav-link {
+        font-family:Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .navbar-brand {
+        font-family: Georgia;
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .dropdown-item {
+        font-family: Georgia;
+        font-size: 18px;
+        font-weight: 300;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">I K A S</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i> <b>About Us</b></i>  </a>
+                  <ul class="dropdown-menu fade-up">
+                  <li><a class="dropdown-item text-primary" href="whoweare"> Who we are?</a></li>
+                  <li><a class="dropdown-item text-primary" href="missionvision"> Our Mission & Vision</a></li>
+                  <li><a class="dropdown-item text-primary" href="workplan"> Our Work plan & Methodologies </a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>Our <b>PIONEERS</b></i>  </a>
+                  <ul class="dropdown-menu fade-up">
+                  <li><a class="dropdown-item text-primary" href="https://www.hrsa.gov/"> HRSA</a></li>
+                  <li><a class="dropdown-item text-primary" href="https://www.kidneyregistry.org/"> NKR </a></li>
+                  <li><a class="dropdown-item text-primary" href="https://www.kidney.org/"> NKF </a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>For <b>DONORS</b></i>  </a>
+                  <ul class="dropdown-menu fade-up">
+                  <li><a class="dropdown-item text-primary" href="willingtodonate"> I am willing to donate</a></li>
+                  <li><a class="dropdown-item text-primary" href="eligibledonor">  Am I an eligible Donor? </a></li>
+                  <li><a class="dropdown-item text-primary" href="ttkdonor"> Things To Know </a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>For <b>RECEPIENTS</b></i>  </a>
+                  <ul class="dropdown-menu fade-up">
+                  <li><a class="dropdown-item text-primary" href="recepientreg">I need a Kidney </a></li>
+                  <li><a class="dropdown-item text-primary" href="recepientlog"> Recepient Login  </a></li>
+                  <li><a class="dropdown-item text-primary" href="ttkrecepient">Things To Know </a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  <i>For <b>CENTERS</b></i>  </a>
+                  <ul class="dropdown-menu fade-up">
+                  <li><a class="dropdown-item text-primary" href="opcfind">Find Your Nearest OPC</a></li>
+                  <li><a class="dropdown-item text-primary" href="opc">What is OPC? </a></li>
+                  <li><a class="dropdown-item text-primary" href="opclink">Donor->OPC->Recepient</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"><i><b>Contact us</b></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+
+    <main class="container mt-4">
+          
+        <section id="home" class="d-flex justify-content-sm-center justify-content-md-evenly align-items-sm-center flex-column-reverse gap-3 flex-md-row">
+          <!-- Home -->
+            <div class="d-flex justify-content-sm-center align-items-sm-center flex-column justify-content-md-start align-items-md-start">
+                <h1 style="font-family: Georgia;"><b>I K A S</b></h1> <h3 style="font-family: Georgia;"><i>A Cure for the Needy</i></h3>
+                <p style="font-family: Georgia;">Save a life after life and a second chance is in your hands.</p>
+                <h6 style="font-family: Georgia;"><b>Need for a kidney<br>Register here</b></h6>
+                <p>
+                  <a class="btn btn-primary" style="font-family: Verdana; font-weight: 600;" href="recepientreg" role="button" target="_self">I am in need of kidney transplant</a> &nbsp &nbsp 
+                </p>
+                <h6 style="font-family: Georgia;"><b>If Already Registered?<br> LOGIN here</b></h6>
+                <p>
+                  <a class="btn btn-outline-primary" style="font-family: Verdana; font-weight: 600;" href="recepientlog" role="button" target="_self">Recepient Login</a>  &nbsp &nbsp
+                  <a class="btn btn-outline-primary" style="font-family: Verdana; font-weight: 600;" href="adminlog" role="button" target="_self">Admin Login</a>
+                </p>
+            </div>
+            <div class="d-md-none w-50 h-50">
+              <iframe width="500" height="350" src="https://www.youtube.com/embed/iWSewFlU6o8" title="What Is a Kidney Transplant?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+            </div>
+            <div class="d-none d-md-block w-50 h-25 mx-auto">
+              <iframe width="650" height="400" src="https://www.youtube.com/embed/iWSewFlU6o8" title="What Is a Kidney Transplant?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+            </div>
+
+        </section>
+          
+        <section id="about" class="mt-5 p-4 ">
+          <!-- About Us  -->
+          <hr>
+          <br>
+                <h1 class="text-primary text-center" style="font-family: Georgia;">About Us</h1>
+                <br/>
+                <div >
+                  <h3 style="font-family: Georgia;">Our Vision and Mission - <b>I K A S</b></h3>
+                  <p style="font-family: Calibri; font-size: 18px;">
+                    Our goal is to protect all living kidney donors while improving and saving the lives of people who are experiencing kidney failure by enhancing the quality, speed, and quantity of living donor transplants worldwide.
+
+                  </p>  
+                  <br/>
+                  <h5>Eplet Matching?</h5><br/>
+                  <p style="font-family: Calibri; font-size: 18px;">
+                    Historically, matches were based on HLA antigen comparisons. A zero out of six antigen match was the least desirable, while a six out of six was considered the most desirable.
+                    
+                    Similar to how atoms are made of many smaller components, we now know that antigens are made of many smaller components. These smaller components are called eplets.<br> The best genetic match between a kidney donor and a transplant recipient is a low eplet mismatch.<br><br></p>
+                    <p style="font-family: Calibri; font-size: 18px;">
+                      Since 1954, when the first successful living donor transplant took place in Boston, living donors have been giving the gift of life and making a difference. This tradition has allowed thousands of people facing kidney failure to live longer, healthier lives, free from the challenging routine of dialysis.
+                      
+                      </p>
+                      <br>
+                      <h5><p style="font-family: Calibri; font-size: 20px;">IKAS is dedicated to increase the number of kidney transplants from living donors, improving donor-recipient matches for longer-lasting transplants, and offering protection and support to living kidney donors to make the kidney donation process safer, easier and more convenient.</p></h5>
+                    
+                    
+                </div>
+
+        </section>
+
+        <section id="links" class="p-4 mt-4">
+          <!-- Vital Links -->
+          <hr>
+          <br>
+            <h1 class="text-primary text-center" style="font-family: Georgia;">Vital Links</h1>
+            <div class="d-flex flex-column flex-md-row justify-content-md-evenly align-items-center mt-3">
+                <div class="card mt-3 mb-2" style="width: 18rem;">
+                    <img src="images/hsra.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HRSA</h5>
+                        <p class="card-text">Health resources & Services administration</p>
+                        <a href="https://www.hrsa.gov/" class="btn btn-dark" target="_blank">Go To <i class="fas fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="card mt-3 mb-2" style="width: 18rem;">
+                    <img src="images/Kidney registry.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">National Kidney Registry</h5>
+                         <p class="card-text">Kidney recepient registration. </p>
+                         <a href="https://www.kidneyregistry.org/" class="btn btn-dark" target="_blank">Go To <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="card mt-3 mb-2" style="width: 18rem;">
+                    <img src="images/Kidney.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">National Kidney Foundation</h5>
+                        <p class="card-text">Kidney donation and transplantation</p>
+                        <a href="https://www.kidney.org/" class="btn btn-dark" target="_blank">Go To <i class="fab fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+          </div>
+        </section>  
+
+        <section id="contact" class="mt-4 py-4">
+            <!-- Contact us -->
+            <hr>
+          <br>
+            <h1 class="text-primary text-center" style="font-family: Georgia;">Contact Us</h1>
+            <div class="row">
+                <div class="col-sm col-md-8">
+            <form action="">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><b>Email address</b></label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" required placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"><b>Message</b></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" required placeholder="Enter your amazing message!" rows="3"></textarea>
+                  </div>
+                <button type="submit" class="btn btn-primary" style="font-family: Verdana; font-weight: 600;">
+                    Submit
+                </button>  
+            </form>
+                </div>
+                <div class="col-sm col-md-4">
+            <div class="mt-3">
+                <h4><i class="fas fa-at text- ms-2"></i><a href="mailto:ikasindia@gmail.com">  ikasindia@gmail.com</a></h4>
+                <h4 class="text-dark"><b>  Call us at :</b> <a href="tel:+919361780464" class="text-primary">9361780464</a></h4>
+            </div>
+        </div>
+        </div>
+  
+        </section>
+
+
+         
+        
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
