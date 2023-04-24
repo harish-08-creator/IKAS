@@ -5,11 +5,11 @@ function admindash(req,res) {
   var match_id = [];
   var sql='';
   console.log(Donor_id)
-
+  
   con.query('SELECT * FROM donorform WHERE id = ?', Donor_id, function (err, rows) {
     if (err) {
       req.flash('error', err)
-      res.render('adminfdash', { data: '',datas:'', heading: headingfinal })
+      res.render('adminfdash', { datad:'' ,data: '',datas:'', heading: headingfinal, id: Donor_id})
     } else {
       // res.render('admindash', { data: rows, heading: headingfinal })
       if (rows[0].bmi < 35) {
@@ -30,7 +30,7 @@ function admindash(req,res) {
           con.query(sql, function (err, rows_a) {
             if (err) {
               req.flash('error', err)
-              res.render('adminfdash', { data: '', datas: '', heading: headingfinal })
+              res.render('adminfdash', { datad:'' ,data: '', datas: '', heading: headingfinal, id: Donor_id})
             } else {
               // res.render('recepientdash', { data: rows, heading: headinginit })
               for(var i=0; i< rows_a.length; i++) {
@@ -55,7 +55,7 @@ function admindash(req,res) {
               con.query('SELECT * from recepientreg LEFT JOIN recepientform ON recepientreg.id = recepientform.id where recepientform.id IN (?)', [match_id], function (err, rows_b) {
                 if (err) {
                   req.flash('error', err)
-                  res.render('adminfdash', { data: '', datas: '', heading: headingfinal })
+                  res.render('adminfdash', { datad:'' ,data: '', datas: '', heading: headingfinal, id: Donor_id})
                 } else {
                   // res.render('adminfdash', { data: rows_b, heading: headingfinal })
                   con.query('SELECT id from recepientform where healthcondition ="Urgency" AND id IN (?)', [match_id], function (err, rows_c) {
@@ -64,7 +64,7 @@ function admindash(req,res) {
                     if (countu == 1) {
                       //urgency=1
                       con.query('SELECT * from recepientform LEFT JOIN recepientreg ON recepientform.id = recepientreg.id where healthcondition ="Urgency" AND recepientform.id IN (?)', [match_id], function (err, rows_d) { 
-                      res.render('adminfdash', { data: rows_b, datas: rows_d, heading: headingfinal })
+                      res.render('adminfdash', { datad: rows, data: rows_b, datas: rows_d, heading: headingfinal, id: Donor_id})
                       })  
                     } 
                     else if(countu >1) {
@@ -74,14 +74,14 @@ function admindash(req,res) {
                         if (counte == 1) {
                           //epts=1
                           con.query('SELECT * from recepientform LEFT JOIN recepientreg ON recepientform.id = recepientreg.id where epts <20 AND healthcondition="Urgency" AND recepientform.id IN (?)', [match_id], function (err, rows_f) { 
-                          res.render('adminfdash', { data: rows_b, datas: rows_f, heading: headingfinal })
+                          res.render('adminfdash', { datad: rows, data: rows_b, datas: rows_f, heading: headingfinal, id: Donor_id})
                           })  
                         }
                         else if(counte > 1) {
                           //epts>1
                           con.query('SELECT * from recepientform LEFT JOIN recepientreg ON recepientform.id = recepientreg.id where epts <20 AND healthcondition="Urgency" AND recepientform.id IN (?) ORDER BY age asc', [match_id], function (err, rows_g) {
                             //minimum age
-                            res.render('adminfdash', { data: rows_b, datas: rows_g, heading: headingfinal })
+                            res.render('adminfdash', { datad: rows, data: rows_b, datas: rows_g, heading: headingfinal, id: Donor_id})
                           })
                         }
                         else {
@@ -91,14 +91,14 @@ function admindash(req,res) {
                             if (counte == 1) {
                               //epts=1nos
                               con.query('SELECT * from recepientform LEFT JOIN recepientreg ON recepientform.id = recepientreg.id where epts >20 AND healthcondition="Urgency" AND recepientform.id IN (?)', [match_id], function (err, rows_i) { 
-                              res.render('adminfdash', { data: rows_b, datas: rows_i, heading: headingfinal })
+                              res.render('adminfdash', { datad: rows, data: rows_b, datas: rows_i, heading: headingfinal, id: Donor_id})
                               })  
                             }
                             else {
                               //epts>1nos
                               con.query('SELECT * from recepientform LEFT JOIN recepientreg ON recepientform.id = recepientreg.id where epts >20 AND healthcondition="Urgency" AND recepientform.id IN (?) ORDER BY age asc', [match_id], function (err, rows_j) {
                                 //minimum age
-                                res.render('adminfdash', { data: rows_b, datas: rows_j, heading: headingfinal })
+                                res.render('adminfdash', { datad: rows, data: rows_b, datas: rows_j, heading: headingfinal, id: Donor_id})
                               })
                             }
                           })
@@ -112,7 +112,7 @@ function admindash(req,res) {
                         if (countnu == 1) {
                           //not urgency=1nos
                           con.query('SELECT * from recepientform LEFT JOIN recepientreg ON recepientform.id = recepientreg.id where healthcondition ="Not Urgency" AND recepientform.id IN (?)', [match_id], function (err, rows_l) { 
-                          res.render('adminfdash', { data: rows_b, datas: rows_l, heading: headingfinal })
+                          res.render('adminfdash', { datad: rows, data: rows_b, datas: rows_l, heading: headingfinal, id: Donor_id})
                           })  
                         } 
                         else {
@@ -122,14 +122,14 @@ function admindash(req,res) {
                             if (counte == 1) {
                               //epts=1
                               con.query('SELECT * from recepientform LEFT JOIN recepientreg ON recepientform.id = recepientreg.id where epts <20 AND healthcondition="Not Urgency" AND recepientform.id IN (?)', [match_id], function (err, rows_n) { 
-                              res.render('adminfdash', { data: rows_b, datas: rows_n, heading: headingfinal })
+                              res.render('adminfdash', { datad: rows, data: rows_b, datas: rows_n, heading: headingfinal, id: Donor_id})
                               })  
                             }
                             else if(counte > 1) {
                               //epts>1
                               con.query('SELECT * from recepientform LEFT JOIN recepientreg ON recepientform.id = recepientreg.id where epts <20 AND healthcondition="Not Urgency" AND recepientform.id IN (?) ORDER BY age asc', [match_id], function (err, rows_o) {
                                 //minimum age
-                                res.render('adminfdash', { data: rows_b, datas: rows_o, heading: headingfinal })
+                                res.render('adminfdash', { datad: rows, data: rows_b, datas: rows_o, heading: headingfinal, id: Donor_id})
                               })
                             }
                             else {
@@ -139,14 +139,14 @@ function admindash(req,res) {
                                 if (counte == 1) {
                                   //epts=1nos
                                   con.query('SELECT * from recepientform LEFT JOIN recepientreg ON recepientform.id = recepientreg.id where epts >20 AND healthcondition="Not Urgency" AND recepientform.id IN (?)', [match_id], function (err, rows_q) { 
-                                  res.render('adminfdash', { data: rows_b, datas: rows_q, heading: headingfinal })
+                                  res.render('adminfdash', { datad: rows, data: rows_b, datas: rows_q, heading: headingfinal, id: Donor_id})
                                   })  
                                 }
                                 else {
                                   //epts>1nos
                                   con.query('SELECT * from recepientform LEFT JOIN recepientreg ON recepientform.id = recepientreg.id where epts >20 AND healthcondition="Not Urgency" AND recepientform.id IN (?) ORDER BY age asc', [match_id], function (err, rows_r) {
                                     //minimum age
-                                    res.render('adminfdash', { data: rows_b, datas: rows_r, heading: headingfinal })
+                                    res.render('adminfdash', { datad: rows, data: rows_b, datas: rows_r, heading: headingfinal, id: Donor_id})
                                   })
                                 }
                               })

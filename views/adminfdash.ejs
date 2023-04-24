@@ -90,13 +90,80 @@
               </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact"><i><b>Contact us</b></i></a>
+            <a class="nav-link mx-5 border border-dark rounded bg-dark text-light" href="/"><b>Logout</b></a>
           </li>
         </ul>
       </div>
     </div>
 </nav>
 
+<!-- Donor of requested ID -->
+<div class="container mt-4">
+  <center>
+  <h1 style="font-family: Georgia;"><b><u>Donor of ID <%= id %></u></b></h1>
+  </center>
+  <br />
+  <div class="table-responsive">
+  <table class="table table-info">
+    <thead>
+      <tr class="table-dark">
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Age</th>
+        <th scope="col">Blood group</th>
+        <th scope="col">Health condition</th>
+        <th scope="col">Height</th>
+        <th scope="col">Weight</th>
+        <th scope="col">BMI</th>
+        <th scope="col">Area</th>
+        <th scope="col">Address</th>
+        <th scope="col">Mobile Number</th>
+        <th scope="col">Email</th>
+        <th scope="col">Epts</th>
+        <th scope="col">HLA-A</th>
+        <th scope="col">HLA-A</th>
+        <th scope="col">HLA-B</th>
+        <th scope="col">HLA-B</th>
+        <th scope="col">HLA-DR</th>
+        <th scope="col">HLA-DR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% if(datad.length){ for(var i = 0; i< datad.length; i++) {%>
+      <tr>
+        <th scope="row"><%= datad[i].id%></th>
+        <td><%= datad[i].fullname%></td>
+        <td><%= datad[i].gender%></td>
+        <td><%= datad[i].age%></td>
+        <td><%= datad[i].bloodgroup%></td>
+        <td><%= datad[i].healthcondition%></td>
+        <td><%= datad[i].height%></td>
+        <td><%= datad[i].weight%></td>
+        <td><%= datad[i].bmi%></td>
+        <td><%= datad[i].area%></td>
+        <td><%= datad[i].address%></td>
+        <td><%= datad[i].mobilenum%></td>
+        <td><%= datad[i].email%></td>
+        <td><%= datad[i].epts%></td>
+        <td><%= datad[i].rhla_a1%></td>
+        <td><%= datad[i].rhla_a2%></td>
+        <td><%= datad[i].rhla_b1%></td>
+        <td><%= datad[i].rhla_b2%></td>
+        <td><%= datad[i].rhla_dr1%></td>
+        <td><%= datad[i].rhla_dr2%></td>
+      </tr>
+      <% } }else{ %>
+      <tr>
+        <td>No data ever existed.</td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<!-- Matched Recepient List -->
 <div class="container mt-4">
   <center>
   <h1 style="font-family: Georgia;"><b><u><%= heading %></u></b></h1>
@@ -162,6 +229,7 @@
   </div>
 </div>
 
+<!-- Prioritized Matched Recepient -->
 <div class="container mt-4">
   <center>
   <h1 style="font-family: Georgia;"><b><u>Prioritized Matched Recepient</u></b></h1>
